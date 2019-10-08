@@ -13,7 +13,6 @@ module.exports =
             key.importKey(publicKeyStr, "pkcs1-public");
             key.setOptions({
                 environment: "node",
-                encryptionScheme: "pkcs1",
                 signingScheme: "pkcs1-sha1"
             });
 
