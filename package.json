@@ -1,0 +1,12 @@
+{
+  "name": "signature-verification",
+  "version": "1.0.0",
+  "description": "Proxy API Callback Signature Verification",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Peter Njeru",
+  "license": "ISC",
+  "dependencies": {
+    "node-rsa": "^1.0.6"
+  }
+}
