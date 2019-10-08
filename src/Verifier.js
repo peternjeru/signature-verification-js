@@ -5,25 +5,6 @@ const RSA = require('node-rsa');
 
 module.exports =
 {
-    getKeyPair: function()
-    {
-        var key = new RSA();
-        key.generateKeyPair(1024);
-        var keyPair = {};
-        keyPair.SK = key.exportKey("pkcs1-private");
-        keyPair.PK = key.exportKey("pkcs1-public");
-        return keyPair;
-    },
-
-    sign: function (privateKeyStr, data)
-    {
-        var key = new RSA();
-        key.importKey(privateKeyStr, "pkcs1-private");
-        var sign = key.sign(data, "base64");
-
-        return sign;
-    },
-
     verify: function (publicKeyStr, data, signature)
     {
         try
